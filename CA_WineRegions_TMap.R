@@ -18,7 +18,7 @@ ca <- readOGR(dsn = "Desktop/CA-state-boundary", layer = "CA_State_TIGER2016")
 tmap_mode("plot")
 tm_shape(ca) +
   tm_fill("white") +
-  tm_borders()  +
+  tm_borders("black")  +
   tm_shape(cawine) +
   tm_fill("name",legend.show = FALSE, alpha = .5) +
   tm_borders() +
